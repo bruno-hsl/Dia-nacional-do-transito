@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(90deg, #23395B 0%, #3a6186 60%);
+    background: linear-gradient(90deg, #121820 0%, #2a3f52 60%);
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -22,9 +22,9 @@ body {
 }
 
 .logo img {
-    height: 48px;
+    height: 78px;
     display: block;
-        /* vertical-align removed to fix lint errors */
+       
 }
 
 .menu {
@@ -59,7 +59,7 @@ body {
     box-shadow: 0 6px 12px rgba(34,57,91,0.12);
 }
 
-/* Mobile: stack menu */
+
 @media (max-width: 720px) {
     .navbar {
         padding: 0 1rem;
@@ -261,6 +261,113 @@ iframe {
     max-width: 100%;
     }
 
+#main.container2 {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.content-box {
+    background: #ededed;
+    border-left: 6px solid #1b3a10;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.content-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1b3a10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-box ul {
+    padding-left: 20px;
+    list-style: "✅ ";
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Seção de Curiosidades */
+#curiosidades {
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: #f4f6f9;
+  border-radius: 12px;
+}
+
+#curiosidades h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1c1c1c;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+#curiosidades h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  margin: 12px auto 0 auto;
+  border-radius: 3px;
+}
+
+.grid-curiosidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.grid-curiosidades article {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.grid-curiosidades article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.grid-curiosidades h3 {
+  font-size: 1.2rem;
+  color: #1b3a10;
+  margin-bottom: 12px;
+  border-left: 5px solid #ffcc00;
+  padding-left: 10px;
+}
+
+.grid-curiosidades p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
 
 
 #footer {
@@ -276,6 +383,7 @@ iframe {
     font-size: 0.7rem;
     letter-spacing: 0.5px;
 }
+
 
 #footer .copyright {
     list-style: none;
