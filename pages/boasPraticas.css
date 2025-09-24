@@ -79,11 +79,10 @@ body {
     }
 }
 
-
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: url('img/transito3.jpg');
+    background-image: url('/img/transito3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -155,6 +154,55 @@ body {
     height: auto;
 }
 
+.box2 {
+    background: #f7f7fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(58, 97, 134, 0.08);
+    padding: 32px 24px;
+    margin: 40px auto 32px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.box2 h2 {
+    margin-top: 0;
+    color: #3a6186;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.sub-box2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px auto 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(58, 97, 134, 0.07);
+}
+
+.sub-box2 th,
+.sub-box2 td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.sub-box2 th {
+    background: #3a6186;
+    color: #fff;
+    font-size: 1.1rem;
+
+}
+
+.sub-box2 tr:last-child td {
+    border-bottom: none;
+}
+
+.sub-box2 td {
+    font-size: 1rem;
+    color: #333;
+}
 
 .safety-distance-section {
     display: flex;
@@ -169,52 +217,38 @@ body {
     max-width: 70%;
 }
 
-
-#main.container2 {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.content-box {
-    background: #ededed;
-    border-left: 6px solid #1b3a10;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.content-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.content-box h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #1b3a10;
+.video-container {
     display: flex;
+    justify-content: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.faixa-transito {
+    width: 70%;
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    border-radius: 6px;
 }
 
-.content-box p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-.content-box ul {
-    padding-left: 20px;
-    list-style: "✅ ";
-    line-height: 1.8;
-    color: #333;
-}
-
+.faixa-transito marquee {
+    max-width: 100%;
+    }
 
 #footer {
     display: flex;
