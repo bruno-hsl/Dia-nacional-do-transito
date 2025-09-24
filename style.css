@@ -96,14 +96,6 @@ body {
     background-image: url('img/transito3.jpg');
 }
 
-#boas-praticas {
-    margin: 0% 15%;
-}
-#boas-praticas p{
-    padding: 0;
-}
-
-
 .banner-content {
     display: flex;
     flex-direction: column;
@@ -128,12 +120,6 @@ body {
         0 0 15px #e6181c,
         0 0 45px #ff3333,
         0 0 60px #ff6666;
-}
-#boas-praticas h1 {
-    text-shadow:
-        0 0 15px #00983d,   
-        0 0 30px #007427,   
-        0 0 40px #004617;   
 }
 
 button {
